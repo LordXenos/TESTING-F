@@ -1,13 +1,13 @@
-# dhoner-fca
+# FCA-SIFU
 
-[![npm version](https://img.shields.io/npm/v/dhoner-fca.svg)](https://www.npmjs.com/package/dhoner-fca)
-[![npm downloads](https://img.shields.io/npm/dm/dhoner-fca.svg)](https://www.npmjs.com/package/dhoner-fca)
+[![npm version](https://img.shields.io/npm/v/fca-sifu.svg)](https://www.npmjs.com/package/fca-sifu)
+[![npm downloads](https://img.shields.io/npm/dm/fca-sifu.svg)](https://www.npmjs.com/package/fca-sifu)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Node.js Version](https://img.shields.io/node/v/dhoner-fca.svg)](https://nodejs.org)
+[![Node.js Version](https://img.shields.io/node/v/fca-sifu.svg)](https://nodejs.org)
 
-**dhoner-fca** is an advanced Facebook Chat API (FCA) client built for **reliable**, **real-time**, and **modular** interaction with Facebook Messenger.
+**FCA-SIFU** is an advanced Facebook Chat API (FCA) client built for **reliable**, **real-time**, and **modular** interaction with Facebook Messenger.
 
-Developed and maintained by **[NeoKEX](https://github.com/NeoKEX)**.  
+Developed and maintained by **[S1FU](https://github.com/ewr-sifu)**.  
 Inspired by **ws3-fca** and **@dongdev/fca-unofficial**
 
 ---
@@ -21,8 +21,8 @@ Inspired by **ws3-fca** and **@dongdev/fca-unofficial**
 
 ### Support & Issues
 
-- GitHub: [https://github.com/NeoKEX](https://github.com/NeoKEX)
-- Issues: [https://github.com/NeoKEX/fca-kex/issues](https://github.com/NeoKEX/dhoner-fca/issues)
+- GitHub: [https://github.com/ewr-sifu/FCA-SIFU](https://github.com/ewr-sifu/FCA-SIFU)
+- Issues: [https://github.com/ewr-sifu/FCA-SIFU/issues](https://github.com/ewr-sifu/FCA-SIFU/issues)
 
 ---
 
@@ -97,7 +97,7 @@ Inspired by **ws3-fca** and **@dongdev/fca-unofficial**
 > **Requirements:** Node.js v18.0.0 or higher
 
 ```bash
-npm install dhoner-fca
+npm install fca-sifu
 ```
 
 ---
@@ -106,7 +106,7 @@ npm install dhoner-fca
 
 ```js
 const fs = require("fs");
-const { login } = require("dhoner-fca");
+const { login } = require("fca-sifu");
 
 const appState = JSON.parse(fs.readFileSync("appstate.json", "utf8"));
 
@@ -164,7 +164,7 @@ The circuit breaker trips automatically after detecting 2 or more suspension sig
 You can also trip or reset it manually:
 
 ```js
-const { globalAntiSuspension } = require("dhoner-fca/src/utils/antiSuspension");
+const { globalAntiSuspension } = require("fca-sifu/src/utils/antiSuspension");
 
 // Manually trip (e.g. after you detect a warning in a response)
 globalAntiSuspension.tripCircuitBreaker("manual_pause", 30 * 60 * 1000); // 30 min
@@ -181,7 +181,7 @@ console.log(globalAntiSuspension.getConfig());
 Use warmup mode when starting a fresh or recovered session:
 
 ```js
-const { globalAntiSuspension } = require("dhoner-fca/src/utils/antiSuspension");
+const { globalAntiSuspension } = require("fca-sifu/src/utils/antiSuspension");
 globalAntiSuspension.enableWarmup(); // limits to 25 msg/hour for 20 minutes
 ```
 
@@ -238,7 +238,7 @@ api.sendMessage("Top secret message", threadID);
 4. Use in your bot:
 
 ```js
-const { login } = require("dhoner-fca");
+const { login } = require("fca-sifu");
 const appState = require("./appstate.json");
 login({ appState }, {}, (err, api) => { ... });
 ```
@@ -252,7 +252,7 @@ See **[COOKIE_LOGIN.md](COOKIE_LOGIN.md)** for more formats and troubleshooting.
 ```js
 const fs = require("fs");
 const path = require("path");
-const { login } = require("dhoner-fca");
+const { login } = require("fca-sifu");
 
 const appState = JSON.parse(fs.readFileSync("appstate.json", "utf8"));
 
@@ -479,11 +479,11 @@ npm pack --dry-run
 
 ## Credits
 
-- **Developed and maintained by [NeoKEX](https://github.com/NeoKEX)**
-- **NeoKEX Team** — development, maintenance, and feature contributions
+- **Developed and maintained by [S1FU](https://github.com/ewr-sifu)**
+- **S1FU** — development, maintenance, and feature contributions
 - **Inspired by ws3-fca** — by @NethWs3Dev and @CommunityExocore
 
-> Copyright (c) 2026 NeoKEX
+> Copyright (c) 2026 S1FU
 
 ---
 
@@ -497,6 +497,6 @@ See [LICENSE](LICENSE) for full license text.
 
 ## Links
 
-- **npm:** [https://www.npmjs.com/package/dhoner-fca](https://www.npmjs.com/package/dhoner-fca)
-- **GitHub:** [https://github.com/NeoKEX](https://github.com/NeoKEX)
-- **Issues:** [https://github.com/NeoKEX/fca-kex/issues](https://github.com/NeoKEX/fca-kex/issues)
+- **npm:** [https://www.npmjs.com/package/fca-sifu](https://www.npmjs.com/package/fca-sifu)
+- **GitHub:** [https://github.com/ewr-sifu/FCA-SIFU](https://github.com/ewr-sifu/FCA-SIFU)
+- **Issues:** [https://github.com/ewr-sifu/FCA-SIFU/issues](https://github.com/ewr-sifu/FCA-SIFU/issues)
