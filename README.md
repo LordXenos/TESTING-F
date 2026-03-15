@@ -2,11 +2,25 @@
 
 <img src="https://i.imgur.com/s7WMgv2.jpeg">
 
-### Advanced Facebook Chat API
+## Advanced Facebook Chat API
 
 ***Reliable · Real-time***
 
-<br/>
+
+<div/>
+
+---
+
+ ╔━「*Credits*」━╗
+-
+- **┆Tєαᴍ ☣︎ нєαятℓєѕѕ┆**
+- ═━──────────━═
+- ***乛 Xꫀᥒos ゎ***
+- ***乛 S1FU ゎ***
+- 
+ ╚═━──────────━═╝
+ 
+---
 
 [![Version](https://img.shields.io/npm/v/fca-sifu?style=for-the-badge&logo=npm&logoColor=white&color=cb3837)](https://www.npmjs.com/package/fca-sifu)
 [![Downloads](https://img.shields.io/npm/dm/fca-sifu?style=for-the-badge&logo=npm&logoColor=white&color=ff6b6b)](https://www.npmjs.com/package/fca-sifu)
@@ -17,12 +31,13 @@
 
 <br/>
 
-> **FCA-SIFU** is a powerful, production-grade Facebook Chat API client engineered for bot developers who demand stability, speed, and stealth. Built from the ground up with anti-suspension intelligence, MQTT real-time messaging, and a clean modular architecture.
+> **FCA-SIFU**
+> ***is a powerful, production-grade Facebook Chat API client engineered for bot developers who demand stability, speed, and stealth. Built from the ground up with anti-suspension intelligence, MQTT real-time messaging, and a clean modular architecture.***
 
 <br/>
 
 **Developed & Maintained by [S1FU](https://github.com/ewr-sifu)**  
-*Inspired by ws3-fca & @dongdev/fca-unofficial*
+*Inspired by ws3-fca • fca-priyansh • fca-unofficial • kex-fca *
 
 </div>
 
@@ -532,14 +547,18 @@ See [COOKIE_LOGIN.md](COOKIE_LOGIN.md) for more formats and troubleshooting tips
 
 > `appstate.json` contains your **live Facebook session** — treat it like a password.
 
+
 - **Never** commit `appstate.json` to version control
 - **Never** share it publicly or in Discord servers
 - Add it to `.gitignore` immediately
 - Use environment variables or a secrets manager in production deployments
 
+
 ---
 
+
 ## Documentation
+
 
 | Resource | Description |
 |---|---|
@@ -547,19 +566,6 @@ See [COOKIE_LOGIN.md](COOKIE_LOGIN.md) for more formats and troubleshooting tips
 | [CHANGELOG.md](CHANGELOG.md) | Version history and release notes |
 | [examples/](examples/) | Ready-to-run bot examples |
 
----
-
-## Credits
-
-<div align="center">
-
-| Role | Person |
-|---|---|
-| **Lead Developer & Maintainer** | [S1FU](https://github.com/ewr-sifu) |
-| **Original Inspiration** | ws3-fca by @NethWs3Dev |
-| **Additional Inspiration** | @dongdev/fca-unofficial |
-
-*Copyright (c) 2026 S1FU — All rights reserved.*
 
 </div>
 
@@ -580,6 +586,9 @@ See [LICENSE](LICENSE) for the full license text.
 
 <br/>
 
-*Made with dedication by S1FU*
+*Made with ♥️ by S1FU*
+
+*Copyright (c) 2026 S1FU — All rights reserved*
+
 
 </div>
